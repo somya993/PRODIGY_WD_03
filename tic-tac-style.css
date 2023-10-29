@@ -1,0 +1,67 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(bg1.jpg) ;
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    filter: brightness(70%);
+}
+
+
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center vertically within the viewport */
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px;
+    row-gap:5px ;
+
+    
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 600;
+    background-color: white;
+    cursor: pointer;
+    border: 3px solid #000; 
+    
+}
+
+#restart {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+#winner-message {
+    font-size: 50px;
+    color: aliceblue;
+    
+}
+
+#restart{
+    background: rgb(240, 240, 80);
+    border-radius: 8px;
+}
+
+#restart:hover{
+    background: orange;
+}
